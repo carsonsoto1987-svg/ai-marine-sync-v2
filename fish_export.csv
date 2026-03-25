@@ -1,0 +1,11 @@
+id,species_code,scientific_name,common_name,common_name_cn,family,genus,max_size_cm,care_level,temperament,reef_safe,temp_min_c,temp_max_c,price_retail_usd,price_date,price_source,price_history,date_added,last_updated,knowledge_doc_path,disease_info,care_guide
+1,001,Amphiprion ocellaris,Ocellaris Clownfish,公子小丑鱼,Pomacentridae,,,Easy,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+2,002,Amphiprion percula,Percula Clownfish, Percula 小丑鱼,Pomacentridae,,,Easy,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+3,003,Paracanthurus hepatus,Blue Tang,蓝吊,Acanthuridae,,,Moderate,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+4,004,Zebrasoma flavescens,Yellow Tang,黄吊,Acanthuridae,,,Moderate,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+5,005,Pomacanthus imperator,Emperor Angelfish,皇帝神仙鱼,Pomacanthidae,,,Difficult,,f,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+6,006,Pygoplites diacanthus,Regal Angelfish,皇后神仙鱼,Pomacanthidae,,,Difficult,,f,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+7,007,Chromis viridis,Blue Green Chromis,蓝绿光鳃雀鲷,Pomacentridae,,,Easy,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+8,008,Dascyllus trimaculatus,Three-spot Dascyllus,三点白,Pomacentridae,,,Easy,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+9,009,Synchiropus splendidus,Mandarin Dragonet,花斑连鳍䲗,Callionymidae,,,Difficult,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
+10,010,Nemateleotris magnifica,Fire Goby,火焰虾虎鱼,Microdesmidae,,,Easy,,t,,,,,,,2026-03-25,2026-03-25 23:35:48.517148,,,
