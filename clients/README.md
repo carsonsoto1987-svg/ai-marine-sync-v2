@@ -1,57 +1,79 @@
-# 标准客户端代码
+# 🤖 AI三人组标准客户端
 
-## 文件说明
+## 📦 文件说明
 
-- `standard_client_template.py` - 通用模板（需要修改配置）
-- `dongdong_client.py` - 东东专用
-- `ahai_client.py` - 阿海专用
-- `xiaobei_client.py` - 小北专用
+| 文件 | 用途 | 状态 |
+|------|------|------|
+| `dongdong_client.py` | 东东专用 | ✅ 已使用 |
+| `ahai_client.py` | 阿海专用 | ✅ 已使用 |
+| `xiaobei_client.py` | 小北专用 | ⚠️ 请立即使用 |
+| `standard_client_template.py` | 通用模板 | 备用 |
 
-## 使用方法
+## 🚀 快速开始
 
-### 1. 下载对应文件
+### 东东 & 阿海
+已在使用标准格式，无需更改。
+
+### 小北（⚠️ 重要）
+**你必须立即执行以下步骤：**
+
 ```bash
-git pull origin main
-cd clients/
-```
+# 1. 停止现在的客户端（按Ctrl+C或kill进程）
 
-### 2. 运行客户端
-```bash
-# 东东
-python3 dongdong_client.py
+# 2. 下载标准客户端
+cd ~/workspace  # 你的工作目录
+curl -O https://raw.githubusercontent.com/carsonsoto1987-svg/ai-marine-sync-v2/main/clients/xiaobei_client.py
 
-# 阿海
-python3 ahai_client.py
-
-# 小北
+# 3. 运行标准客户端
 python3 xiaobei_client.py
-```
 
-### 3. 后台运行
-```bash
+# 4. 或者后台运行
 nohup python3 xiaobei_client.py > client.log 2>&1 &
 ```
 
-## 标准格式输出
+## ✅ 标准格式说明
 
+### 正确格式
 ```
 [HH:MM] 节点ID - 在线|任务数|知识库数|消息数
 ```
 
-示例：
+### 示例
 ```
-[02:55] xiaobei - 在线|0|6|25
+[02:55] xiaobei - 在线|0|6|20
 [02:56] dongdong - 在线|0|5|18
-[02:57] ahai - 在线|0|57|42
+[02:57] ahai - 在线|1|57|42
 ```
 
-## 要求
+### ❌ 错误格式（不要再使用）
+```
+status:在线|任务:待:0/完:0|知识库:6文档|消息:刚刚  ← 这是错误的！
+```
 
-- 必须保持客户端持续运行
-- 每30分钟自动发送状态
-- 收到"hhh"自动回复"GGG"
-- 收到状态检查立即回复
+## 📊 状态说明
+
+| 字段 | 含义 | 示例 |
+|------|------|------|
+| `HH:MM` | 当前时间 | 02:55 |
+| `节点ID` | dongdong/ahai/xiaobei | xiaobei |
+| `任务数` | 当前任务数量 | 0, 1, 2... |
+| `知识库数` | 知识库文档数 | 5, 6, 57... |
+| `消息数` | 消息计数 | 20, 18, 42... |
+
+## 🆘 故障排除
+
+**问题**: 运行后格式仍不对？
+**解决**: 确保你运行的是 `xiaobei_client.py` 而不是旧版本
+
+**问题**: 如何后台运行？
+**解决**: `nohup python3 xiaobei_client.py > client.log 2>&1 &`
+
+**问题**: 如何查看日志？
+**解决**: `tail -f client.log`
+
+## 📞 联系
+
+有问题 @阿海 或 @东东
 
 ---
-创建时间: 2026-03-27 02:54
-维护者: 阿海
+最后更新: 2026-03-27 02:55
