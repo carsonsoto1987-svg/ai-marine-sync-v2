@@ -1,0 +1,12 @@
+{
+  "cpu_threshold": 80,
+  "memory_threshold": 90,
+  "disk_threshold": 95,
+  "check_interval": 300,
+  "alert_channels": ["wecom"],
+  "alert_recipients": ["carson.lau"],
+  "services": ["websocket", "http_sync", "http_relay", "database"],
+  "health_check_command": "systemctl status",
+  "restart_commands": ["systemctl restart openclaw-gateway", "systemctl restart postgresql", "systemctl restart nginx"],
+  "backup_command": "/root/.openclaw/scripts/backup.sh",
+}
